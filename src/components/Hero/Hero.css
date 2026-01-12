@@ -1,0 +1,118 @@
+/* HeroContainer */
+.HeroContainer {
+    display: grid;
+    grid-template-columns: 1.2fr 5.4fr 5.4fr;
+    height: 100vh;
+}
+
+.HeroContainerFirstBlock {
+    grid-column: 1;
+    grid-row: 1;
+    /* border: 1px solid red; */
+}
+
+.HeroContainerSecondBlock {
+    position: relative;
+    top: 20px;
+    grid-column: 2;
+    grid-row: 1;
+    border: 1px solid yellow;
+}
+
+.HeroContainerThirdBlock {
+    grid-column: 3;
+    grid-row: 1;
+    border: 1px solid black
+}
+
+.ForLogo {
+    background-color: #FE4300;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ForLogo span {
+    font-weight: bold;
+    font-size: xx-large;
+    color: white
+}
+
+.LogoAndCv {
+    display: flex;
+    /* justify-content:space-evenly; */
+}
+
+.Cv a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.Cv {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 250px;
+    height: 60px;
+    position: relative;
+    left: 40px
+}
+
+.subSecondBlock {
+    height: 100%;
+    /* display: flex; */
+    border: 1px solid green;
+
+}
+
+.NameTitle, .DegTitle {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.description {
+    color: #9996a6;
+}
+
+@media (max-width:767px) {
+    .HeroContainer {
+        height: auto;
+        /* min-height: 100vh; */
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 10px; */
+    }
+
+    .HeroContainerFirstBlock {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .HeroContainerSecondBlock {
+        grid-column: 1;
+        grid-row: 2;
+        top: 0px;
+
+    }
+
+    .test {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .HeroContainerThirdBlock {
+        grid-column: 1;
+        grid-row: 3
+    }
+
+    .Cv {
+        left: 20px;
+    }
+}
