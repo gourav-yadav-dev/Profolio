@@ -1,0 +1,96 @@
+.contactContainer {
+    position: relative;
+    top: 100px;
+    /* width: 100%; */
+    background: #ffffff;
+    padding: 12px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-bottom: 1px solid #eee;
+}
+
+/* =========================
+     LEFT CONTACT LIST
+  ========================= */
+.contactList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-right: 290px
+}
+
+.contactList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ICONS (email, phone, web) */
+.contactList li img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* LINKS */
+.contactList li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contactList li a:hover {
+    color: #ff6a00;
+    /* subtle hover like screenshot */
+}
+
+/* =========================
+     RIGHT SOCIAL ICONS
+  ========================= */
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.socialLinks a {
+    width: 32px;
+    height: 32px;
+    background: #000;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialLinks img {
+    width: 16px;
+    height: 16px;
+    filter: invert(1);
+    /* makes icons white */
+}
+
+.socialLinks a:hover {
+    background: #ff6a00;
+    transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .contactContainer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 20px;
+    }
+
+    .contactList {
+        flex-direction: column;
+        gap: 12px;
+        margin-right: 0;
+    }
+}
