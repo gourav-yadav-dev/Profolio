@@ -21,17 +21,17 @@ export function Hero() {
                             </div>
 
                         </div>
-                        <div>
+                        <div className="SecondSub">
                             <div>
-                                <div>
-                                    <span  className="NameTitle">I'm Gourav</span>
-                                    <span></span>
+                                <div className="HeyLogo">
+                                    <span className="NameTitle">I'm Gourav</span>
+                                    <span className="heylogoImg"><img src="../../../wave-icon.svg" /></span>
                                 </div>
                                 <div className="DegTitle">
                                     Software Developer
                                 </div>
                             </div>
-                            <div className="description"> 
+                            <div className="description">
                                 Software Developer passionate about building scalable web applications using modern technologies. Focused on clean code, performance, and continuous learning.
 
                             </div>
@@ -39,7 +39,8 @@ export function Hero() {
                     </div>
                 </div>
                 <div className="HeroContainerThirdBlock">
-                    Hello gusy
+                    {/* Hello gusy */}
+                    <img src="../../../banner-img.png" height="100%" width="100%"></img>
                 </div>
             </div>
         </>
